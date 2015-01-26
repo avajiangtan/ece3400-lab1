@@ -1,0 +1,12 @@
+int sensorPin = A0;    // select the input pin for the potentiometer
+int sensorValue = 0;  // variable to store the value coming from the sensor
+int LED = 3;
+
+void setup() {
+  pinMode(3, OUTPUT);
+}
+
+void loop() {
+  sensorValue = analogRead(sensorPin);
+  analogWrite(LED, sensorValue);
+}
